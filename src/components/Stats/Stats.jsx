@@ -1,4 +1,6 @@
-export const Stats = ({stats}) => {
+import PropTypes from 'prop-types';
+
+export const Stats = ({ stats }) => {
   return (
     <ul className="stats">
       <li>
@@ -15,4 +17,12 @@ export const Stats = ({stats}) => {
       </li>
     </ul>
   );
+}
+
+Stats.propTypes = {
+  stats: PropTypes.exact({
+    followers: PropTypes.number,
+    views: PropTypes.number,
+    likes: PropTypes.number
+  })
 }
