@@ -1,13 +1,14 @@
 import PropTypes from 'prop-types';
 import { Description } from "components/Description/Description";
 import { Stats } from "components/Stats/Stats";
+import { ProfileCard } from './Profile.styled';
 
 export const Profile = ({ username, tag, location, avatar, stats }) => {
   return (
-    <div className="profile">
+    <ProfileCard>
       <Description username={username} tag={tag} location={location} avatar={avatar} />
       <Stats stats={stats} />
-    </div>
+    </ProfileCard>
   );
 }
 
