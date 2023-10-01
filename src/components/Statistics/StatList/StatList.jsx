@@ -1,21 +1,23 @@
 import PropTypes from 'prop-types';
+import { StatisticsList, StatItem, Label, Percentage } from './StatList.styled';
+import getRandomColor from 'utils/random-color';
 
 export const StatList = ({ stats }) => {
   return (
-    <ul>
+    <StatisticsList>
       {stats.map(stat => 
-        <li key={stat.id}>
-          <span>{stat.label}</span>
-          <span>{stat.percentage}</span>
-        </li>
+        <StatItem key={stat.id} color={getRandomColor()}>
+          <Label>{stat.label}</Label>
+          <Percentage>{stat.percentage}%</Percentage>
+        </StatItem>
         )}
-    </ul>
+    </StatisticsList>
   );
 }
 
 StatList.propTypes = {
   stats: PropTypes.arrayOf(PropTypes.shape({
-    id: PropTypes.number,
+    id: PropTypes.string,
     label: PropTypes.string,
     percentage: PropTypes.number
     })).isRequired

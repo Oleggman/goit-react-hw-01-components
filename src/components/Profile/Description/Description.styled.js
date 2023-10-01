@@ -19,7 +19,6 @@ export const ProfileImage = styled.img`
 
 export const DescriptionText = styled.p`
     text-shadow: 0 0 15px rgba(255,255,255,.5), 0 0 10px rgba(255,255,255,.5);
-
 `;
 
 export const Username = styled.p`
