@@ -13,8 +13,8 @@ export const Friend = styled.ul`
 export const Status = styled.span`
   width: 12px;
   height: 12px;
-  background-color: ${({ isOnline }) =>
-    isOnline ? "rgb(34, 158, 34)" : "rgb(174, 45, 45)"};
+  background-color: ${({ $isOnline }) =>
+    $isOnline ? "rgb(34, 158, 34)" : "rgb(174, 45, 45)"};
   border-radius: 50%;
 `;
 
