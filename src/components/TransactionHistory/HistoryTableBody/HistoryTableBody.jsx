@@ -1,14 +1,15 @@
 import PropTypes from "prop-types";
+import { HistoryTBodyRow, HistoryTBodyData } from "./HistoryTableBody.styled";
 
 export const HistoryTableBody = ({ items }) => {
   return (
     <tbody>
       {items.map(({ id, type, amount, currency }) => 
-        <tr key={id}>
-          <td>{type}</td>
-          <td>{amount}</td>
-          <td>{currency}</td>
-        </tr>
+        <HistoryTBodyRow key={id}>
+          <HistoryTBodyData>{type}</HistoryTBodyData>
+          <HistoryTBodyData>{amount}</HistoryTBodyData>
+          <HistoryTBodyData>{currency}</HistoryTBodyData>
+        </HistoryTBodyRow>
       )}
     </tbody>
   );

@@ -1,11 +1,13 @@
+import { HistoryTHead, HistoryTHeadRow } from "./HistoryTableHead.styled";
+
 export const HistoryTableHead = () => {
   return (
-    <thead>
+    <HistoryTHead>
       <tr>
-        <th>Type</th>
-        <th>Amount</th>
-        <th>Currency</th>
+        <HistoryTHeadRow>Type</HistoryTHeadRow>
+        <HistoryTHeadRow>Amount</HistoryTHeadRow>
+        <HistoryTHeadRow>Currency</HistoryTHeadRow>
       </tr>
-    </thead>
+    </HistoryTHead>
   );
 }

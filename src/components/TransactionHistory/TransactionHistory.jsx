@@ -1,13 +1,14 @@
 import PropTypes from "prop-types";
 import { HistoryTableHead } from "./HistoryTableHead/HistoryTableHead";
 import { HistoryTableBody } from "./HistoryTableBody/HistoryTableBody";
+import { HistoryTable } from "./TransactionHistory.styled";
 
 export const TransactionHistory = ({ items }) => {
   return (
-    <table className="transaction-history">
+    <HistoryTable>
       <HistoryTableHead />
       <HistoryTableBody items={items} />
-    </table>
+    </HistoryTable>
   );
 }
 
