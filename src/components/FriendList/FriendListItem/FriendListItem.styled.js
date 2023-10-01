@@ -6,7 +6,7 @@ export const Friend = styled.ul`
   align-items: center;
   background-color: #fff;
   border-radius: 2px;
-  padding: 8px 16px;
+  padding: 12px 20px;
   box-shadow: -6px 8px 10px -3px rgba(0,0,0,0.93);
 `;
 

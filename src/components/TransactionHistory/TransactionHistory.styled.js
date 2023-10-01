@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const HistoryTable = styled.table`
   width: 800px;
   margin: 0 auto;
-  margin-bottom: 40px;
+  margin-bottom: 60px;
   border-collapse: collapse;
   font-size: 1.1em;
   font-family: sans-serif;

@@ -16,6 +16,7 @@ export const StatItem = styled.li`
   &:not(:last-child) {
     border-right: 2px solid black;
   }
+  flex-grow: 1;
 `; 
 
 export const Label = styled.span`

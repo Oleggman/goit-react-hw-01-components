@@ -2,9 +2,9 @@ import styled from "styled-components";
 
 export const Friends = styled.ul`
   display: flex;
-  width: 300px;
+  width: 400px;
   margin: 0 auto;
   flex-direction: column;
-  gap: 12px;
-  margin-bottom: 40px;
+  gap: 20px;
+  margin-bottom: 60px;
 `;
